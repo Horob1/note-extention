@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ghi chú</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="add-note">➕ Ghi chú</button>
+      <button class="tab-button" data-tab="view-notes">📋 Danh sách</button>
+    </div>
+
+    <div id="add-note" class="tab-content">
+      <input class="w-full" type="text" id="note-title" placeholder="Tiêu đề" />
+      <textarea class="w-full" id="note-description" placeholder="Mô tả"></textarea>
+      <input class="w-full" type="datetime-local" id="note-time" />
+      <button class="w-full" id="save-note">💾 Lưu</button>
+    </div>
+
+    <div id="view-notes" class="tab-content hidden">
+      <ul id="note-list"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
